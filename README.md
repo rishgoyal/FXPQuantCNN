@@ -1,6 +1,9 @@
 # Thesis Project on Convolutional Neural Network Quantization
 
-All the code for the project on CNN quantization. Path names are hard coded and so need to be altered before using this code. Usage of algorithms can be found in the jupyter notebooks under the analysis/ folder.
+Code used for the Master Thesis project on "Fixed-point Quantization of Convolutional Neural Networks for Quantized Inference on Embedded Platforms". Paper can be found at https://arxiv.org/abs/2102.02147
+
+
+Path names are hard coded and so need to be altered before using this code. Usage of algorithms can be found in the jupyter notebooks under the analysis/ folder.
 
 As for quantizing a CNN model, I first load an fxp_model from model_gen to quantize activations, then pass that model to functions in fxp_quantize.py to quantize weights and biases. The function evaluate() for class QuantizationEvaluator under optimized_search.py shows how this is performed.
 
@@ -30,7 +33,6 @@ Following is an overview of content in the respective directories
     - Comp_Dependent_Optimized_Search - Final results after running optimized_search.py
     - Dependent_Optimized_Search - Layer-dependent but parameter independent quantization results
     - Independent_Optimized_Search - Layer and parameter independent optimized search
-- Preparation work/ - work done from my Thesis Preparation
 - test_models/ - NN models used for testing. Includes saved pre-trained CNN models and file for pre-trained weights. Also includes scripts to get the respective dataset in its appropriate form for (training and) inference.
 - datasets/ - Fashion-MNIST and SVHN datasets that had to be downloaded. Scripts to get the data can be found under the respective models in test_models/
 
